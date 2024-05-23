@@ -1,0 +1,74 @@
+Q1. - HTML formatting tags 
+<b>
+<strong>
+<i>
+<em> 
+<mark>
+<small>
+
+Q2. - 
+use the rowspan attribute to merge rows and the colspan attribute to merge columns. 
+code - 
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">Merged Cell</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+        <tr>
+            <td>Cell 7</td>
+            <td>Cell 8</td>
+        </tr>
+        <tr>
+            <td>Cell 9</td>
+            <td>Cell 10</td>
+            <td>Cell 11</td>
+            <td>Cell 12</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+Q3. - 
+cellspacing controls the space between cells, while cellpadding controls the space inside the cells.
+
+Q4. - 
+Sementic elements provide better structure and accessibility.
+example - <header>
+<nav>
+<section>
+<footer>
+<main>
+
+Q5. - 
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>This page has a background image.</p>
+</body>
+</html>
+
+
+Q6. - 
+The alt attribute specifies an alternate text for an area, if the image cannot be displayed.
