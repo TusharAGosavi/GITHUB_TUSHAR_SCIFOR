@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Table Example</title>
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha384-m9WflzpxiYc0CW2pKJh6Xgo8j8gyvsFkSivG5wK61elT5LHKMPyVujH6GNyNAmNC" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="grid-container">
+    <h1>Registration Form</h1>
+    <form>
+        <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+                <label>Name
+                    <input type="text" placeholder="Enter your name">
+                </label>
+            </div>
+            <div class="medium-6 cell">
+                <label>Email
+                    <input type="email" placeholder="Enter your email">
+                </label>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+                <label>Password
+                    <input type="password" placeholder="Enter your password">
+                </label>
+            </div>
+            <div class="medium-6 cell">
+                <label>Gender</label>
+                <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <fieldset class="medium-12 cell">
+                <legend>Interests</legend>
+                <input id="coding" type="checkbox"><label for="coding">Coding</label>
+                <input id="music" type="checkbox"><label for="music">Music</label>
+                <input id="sports" type="checkbox"><label for="sports">Sports</label>
+                <input id="travel" type="checkbox"><label for="travel">Travel</label>
+            </fieldset>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="medium-12 cell">
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <h1>Users Table</h1>
+    <table class="stack">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kalpesh</td>
+                <td>kalpesh2gmail.com</td>
+                <td>Male</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Manohar</td>
+                <td>manohar@gmail.com</td>
+                <td>Male</td>
+                <td>Canada</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7W3L+Yc9Z2xkaPvRlGtn4EZ/nmr5F3TpK8f" crossorigin="anonymous"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>
