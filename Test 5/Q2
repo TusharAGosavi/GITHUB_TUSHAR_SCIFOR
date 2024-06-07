@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.3/css/foundation.min.css">
+  <style>
+    
+    .logo {
+      max-height: 40px;
+    }
+
+    .top-bar {
+      background-color: #323038; 
+      padding: 0.5rem 1rem; 
+    }
+
+    .top-bar a {
+      color: #0d045a; 
+    }
+
+    .top-bar a:hover {
+      background-color: #f2e63cd7; 
+    }
+
+    .menu-text {
+      margin-right: 1rem; 
+    }
+
+    @media only screen and (max-width: 640px) {
+      
+      .top-bar {
+        padding: 0.5rem 0.5rem; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="grid-container">
+    <div class="grid-x align-middle">
+      <div class="cell shrink menu-text">
+        <a href="#"><img class="logo" src="https://e7.pngegg.com/pngimages/295/692/png-clipart-color-cricketers-athlete-color.png" alt="Logo"></a>
+      </div>
+      <div class="cell auto">
+        <ul class="menu align-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.3/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+</body>
+</html>
