@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script type="text/javascript" language="JavaScript">
+        // Defining variables for favorite food, color, and vehicle
+        var favoriteFood = "Vadapav";
+        var favoriteColor = "Orange";
+        var favoriteVehicle = "Tata Safari";
+
+        var favoritefood = "Samosa";
+        var favoritecolor = "Saffron";
+        var favoritevehicle = "Mahindra Thar";
+
+        document.write("<h1>Favorite Things</h1>");
+        document.write("<h2>Favorite Food: " + favoriteFood + "</h2>");
+        document.write("<h2>Favorite Color: " + favoriteColor + "</h2>");
+        document.write("<h2>Favorite Vehicle: " + favoriteVehicle + "</h2>");
+
+
+
+        document.writeln("Favorite Food: " + favoritefood + "<br>");
+        document.writeln("Favorite Color: " + favoritecolor + "<br>");
+        document.writeln("Favorite Vehicle: " + favoritevehicle + "<br>");
+
+       
+    </script>
+
+
+</head>
+<body>
+</body>
+</html>
+
 
