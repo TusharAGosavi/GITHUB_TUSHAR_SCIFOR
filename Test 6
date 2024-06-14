@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 6</title>
+
+    <script>
+        
+        function ArithmeticOp() {
+            let num1 = 21;
+            let num2 = 7;
+
+            let addition = num1 + num2;
+            let subtraction = num1 - num2;
+            let multiplication = num1 * num2;
+            let division = num1 / num2;
+            let remainder = num1 % num2;
+
+            document.writeln("<h3>" + "Number 1:  " + num1 + "&nbsp" + "&nbsp" +  "Number 2:  " +num2 + "<br>" + "</h3>");
+            document.writeln("Addition: " + addition + "<br>");
+            document.writeln("Subtraction: " + subtraction + "<br>");
+            document.writeln("Multiplication: " + multiplication + "<br>");
+            document.writeln("Division: " + division + "<br>");
+            document.writeln("Remainder: " + remainder + "<br>");
+        }
+
+        
+
+
+        function DataTypes() {
+            let Name = "Kalpesh";
+            let Age = 22;
+            let isStudent = true;
+            let Salary = null;
+            let undefinedVar;
+
+            document.writeln("String: " + Name + "<br>");
+            document.writeln("Number: " + Age + "<br>");
+            document.writeln("isStudent: " + isStudent + "<br>");
+            document.writeln("Salary :" + Salary + "<br>");
+            document.writeln("Undefined: " + undefinedVar + "<br>");
+        }
+
+        var varString = "This is a var string";
+        let letString = "This is a let string";
+        const constString = "This is a const string";
+
+        function varletconst() {
+            var varString = "This is a var string";
+            let letString = "This is a let string";
+            const constString = "This is a const string";
+
+
+            document.writeln("varString: " + varString + "<br>");
+            document.writeln("letString: " + letString + "<br>");
+            document.writeln("constString: " + constString + "<br><br>");
+        }    
+
+        window.onload = function() {
+            document.writeln("<h3>Arithmetic Operations</h3>");
+            ArithmeticOp();
+            document.writeln("<h3>Displaying Different Data Types</h3>");
+            DataTypes();
+            document.writeln("<h3>Var let const</h3>");
+            varletconst();
+
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
