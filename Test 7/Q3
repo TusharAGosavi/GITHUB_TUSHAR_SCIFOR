@@ -1,0 +1,8 @@
+let age = prompt("Enter your age:");
+
+age = parseInt(age);
+
+let eligibility = (age >= 18) ? "You are eligible to vote." : "You are not eligible to vote.";
+
+console.log(eligibility);
+alert(eligibility);
