@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <script>
+        function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function divide(a, b) {
+            if (b === 0) {
+                alert("Number 2 cannot be 0");
+                return "undefined";
+            }
+            return a / b;
+        }
+
+        function calculate() {
+            var num1 = parseFloat(prompt("Enter the first number:"));
+            var num2 = parseFloat(prompt("Enter the second number:"));
+            var operation = prompt("Choose an operation: addition, subtraction, multiplication, division");
+            var result;
+
+            if (operation === "addition") {
+                result = add(num1, num2);
+            } else if (operation === "subtraction") {
+                result = subtract(num1, num2);
+            } else if (operation === "multiplication") {
+                result = multiply(num1, num2);
+            } else if (operation === "division") {
+                result = divide(num1, num2);
+            } else {
+                alert("Invalid operation.");
+                return;
+            }
+
+            alert("The result is: " + result);
+        }
+    </script>
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    <button onclick="calculate()">Calculate</button>
+</body>
+</html>
