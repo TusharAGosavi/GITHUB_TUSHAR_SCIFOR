@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Manipulation</title>
+    <script>
+        function manipulateArray(strArray) {
+            
+            strArray.push("VOLVO");
+            
+            strArray.pop();
+            
+            for (let i = 0; i < strArray.length; i++) {
+                strArray[i] = strArray[i].toUpperCase();
+            }
+            
+            const joinedString = strArray.join(', ');
+            
+            return joinedString;
+        }
+
+        function displayManipulatedArray() {
+            
+            const inputArray = ['Train', 'Bus', 'Taxi'];
+    
+            const result = manipulateArray(inputArray);
+            
+            document.getElementById('manipulatedArray').textContent = 'Manipulated Array: ' + result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Array Manipulation</h1>
+    <button onclick="displayManipulatedArray()">Manipulate Array</button>
+    <p id="manipulatedArray"></p>
+</body>
+</html>

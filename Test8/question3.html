@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse and Sort Array</title>
+    <script>
+        function reverseAndSortArray(charArray) {
+            
+            charArray.reverse();
+
+            charArray.sort();
+
+            return charArray;
+        }
+
+        function displaySortedArray() {
+            
+            const inputArray = document.getElementById('inputArray').value.split('');
+            
+            const sortedArray = reverseAndSortArray(inputArray);
+            
+            document.getElementById('sortedArray').textContent = 'Sorted Array: ' + sortedArray.join(', ');
+        }
+    </script>
+</head>
+<body>
+    <h1>Reverse and Sort Array</h1>
+    <label for="inputArray">Enter characters:</label>
+    <input type="text" id="inputArray">
+    <button onclick="displaySortedArray()">Reverse and Sort</button>
+    <p id="sortedArray"></p>
+</body>
+</html>

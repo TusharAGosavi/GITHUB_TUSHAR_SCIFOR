@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Count</title>
+    <script>
+        function countCharacters(charArray) {
+            const charCount = {};
+            for (let char of charArray) {
+                if (charCount[char]) {
+                    charCount[char]++;
+                } else {
+                    charCount[char] = 1;
+                }
+            }
+            return charCount;
+        }
+
+        function displayCharCount() {
+            const inputArray = document.getElementById('inputArray').value.split('');
+            const result = countCharacters(inputArray);
+            document.getElementById('charCount').textContent = 'Character Count: ' + JSON.stringify(result);
+        }
+    </script>
+</head>
+<body>
+    <h1>Character Count Tool</h1>
+    <label for="inputArray">Enter characters:</label>
+    <input type="text" id="inputArray">
+    <button onclick="displayCharCount()">Count Characters</button>
+    <p id="charCount"></p>
+</body>
+</html>
