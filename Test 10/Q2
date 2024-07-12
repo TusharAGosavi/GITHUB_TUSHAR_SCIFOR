@@ -1,0 +1,57 @@
+classcomp.js :-
+
+import React, { Component } from 'react';
+
+class StyledText extends Component {
+  render() {
+    const headingStyle = {
+      
+      color: 'Maroon',
+      fontSize: '24px',
+      fontWeight: 'bold',
+    };
+
+    const paragraphStyle = {
+      color: 'red',
+      fontSize: '16px',
+      border: '2px solid Grey',
+    };
+
+    return (
+      <div>
+        <h1 style={headingStyle}>React Class Component Heading</h1>
+        <p style={paragraphStyle}>Paragraph with inline styling. Class components are more powerful than functional components because they can manage their own state and lifecycle methods. </p>
+      </div>
+    );
+  }
+}
+
+export default StyledText;
+
+
+
+
+
+app.js :-
+
+import React from 'react';
+import StyledText from './classcomp';
+import UserDetails from './userdetails';
+
+function App() {
+  return (
+    <div>
+      <h1>User Details</h1>
+      <UserDetails
+        name="Tushar Gosavi"
+        age={22}
+        email="tushargosavi09@gmail.com"
+        mobileNo="1234567890"
+        city="Sindhudurg"
+      />
+      <StyledText />
+    </div>
+  );
+}
+
+export default App;
