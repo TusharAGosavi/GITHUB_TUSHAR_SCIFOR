@@ -1,0 +1,48 @@
+App.js :-
+
+
+import React from 'react';
+import UserDetails from './userdetails';
+
+function App() {
+  return (
+    <div>
+      <h1>User Details</h1>
+      <UserDetails
+        name="Tushar Gosavi"
+        age={22}
+        email="tushargosavi09@gmail.com"
+        mobileNo="1234567890"
+        city="Sindhudurg"
+      />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+userdetails.js :-
+
+
+import React from 'react';
+
+const UserDetails = (props) => {
+  const { name, age, email, mobileNo, city } = props;
+
+  return (
+    <div>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+      <p>Email: {email}</p>
+      <p>Mobile No: {mobileNo}</p>
+      <p>City: {city}</p>
+    </div>
+  );
+};
+
+export default UserDetails;
