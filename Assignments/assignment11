@@ -1,0 +1,60 @@
+import React from 'react';
+
+class ParentComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      person: {
+        name: "Tushar",
+        lname: "Gosavi",
+        email: "tushargosavi09@gmail.com",
+        birthYear: 2002
+      }
+    };
+  }
+
+  updateDetails = () => {
+    this.setState({
+      person: {
+        ...this.state.person,
+        name: "Tejas",
+        lname: "Gosavi",
+        birthYear: 2000
+      }
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Parent Component</h1>
+        <ChildComponent person={this.state.person} />
+        <button onClick={this.updateDetails}>Update Details</button>
+      </div>
+    );
+  }
+}
+
+class ChildComponent extends React.Component {
+  render() {
+    const { name, lname, email, birthYear } = this.props.person;
+    return (
+      <div>
+        <h2>Child Component</h2>
+        <p>Name: {name} {lname}</p>
+        <p>Email: {email}</p>
+        <p>Birth Year: {birthYear}</p>
+      </div>
+    );
+  }
+}
+
+function App() {
+  return (
+    <div className="App">
+      <ParentComponent />
+    </div>
+  );
+}
+
+export default App;
