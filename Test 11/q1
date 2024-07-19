@@ -1,0 +1,73 @@
+app.js:-
+
+
+import React, { useState } from 'react';
+import './Username.css'; 
+
+const UsernameInput = () => {
+  const [username, setUsername] = useState('');
+
+  const handleInputChange = (event) => {
+    setUsername(event.target.value);
+  };
+
+  return (
+    <div className="username-input-container">
+      <label className="username-label">
+        Username:
+        <input
+          type="text"
+          value={username}
+          onChange={handleInputChange}
+          className="username-input"
+        />
+      </label>
+      <p className="username-display">Your username is: {username}</p>
+    </div>
+  );
+};
+
+export default UsernameInput;
+
+
+
+
+
+
+username.css:-
+
+.username-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .username-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .username-input {
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  .username-input:focus {
+    border-color: #0056b3;
+    outline: none;
+  }
+  
+  .username-display {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555;
+  }
+  
