@@ -1,0 +1,33 @@
+UseEffect hook
+
+
+import React, { useRef, useEffect } from 'react';
+
+function HighlightInput() {
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    // Cleanup function to reset background color when component unmounts or re-renders
+    return () => {
+      if (inputRef.current) {
+        inputRef.current.style.backgroundColor = 'white';
+      }
+    };
+  }, []);
+
+  const handleClick = () => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+      inputRef.current.style.backgroundColor = 'yellow'; // Change background color
+    }
+  };
+
+  return (
+    <div>
+      <input ref={inputRef} type="text" />
+      <button onClick={handleClick}>Highlight Input</button>
+    </div>
+  );
+}
+
+export default HighlightInput;
