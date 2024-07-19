@@ -1,0 +1,101 @@
+app.js :
+
+
+import React, { useState } from 'react';
+import './Counter.css'; 
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  const reset = () => {
+    setCount(0);
+  };
+
+  return (
+    <div className="counter-container">
+      <h1 className="counter-display">Count: {count}</h1>
+      <div className="button-container">
+        <button onClick={increment} className="counter-button increment">
+          Increment
+        </button>
+        <button onClick={decrement} className="counter-button decrement">
+          Decrement
+        </button>
+        <button onClick={reset} className="counter-button reset">
+          Reset
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Counter;
+
+
+
+
+
+
+counter.css:-
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .counter-display {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .counter-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .increment {
+    background-color: #28a745;
+  }
+  
+  .increment:hover {
+    background-color: #218838;
+  }
+  
+  .decrement {
+    background-color: #dc3545;
+  }
+  
+  .decrement:hover {
+    background-color: #c82333;
+  }
+  
+  .reset {
+    background-color: #ffc107;
+  }
+  
+  .reset:hover {
+    background-color: #e0a800;
+  }
+  
