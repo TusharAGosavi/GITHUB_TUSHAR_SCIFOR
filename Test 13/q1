@@ -1,0 +1,14 @@
+RESTful API:- 
+
+A RESTful API (Representational State Transfer Application Programming Interface) is an interface that enables the transfer of representations of state on a web-based platform. 
+It aims to be simple, flexible, and scalable.
+The most common format for exchanging data is JSON
+Each request from a client to the server must contain all the information needed to understand and process the request.
+The server does not store any state about the client session.
+
+Methods:
+
+GET: Retrieves data
+POST: Creates new data
+PUT: Updates existing data
+DELETE: Removes data
