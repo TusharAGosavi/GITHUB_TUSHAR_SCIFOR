@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Division Calculator</h1>
+    <p>Enter two integers to divide:</p>
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1"><br><br>
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2"><br><br>
+    <button onclick="divideNumbers()">Divide</button>
+
+    <h2>Result:</h2>
+    <p id="result"></p>
+
+    <script>
+        function divideNumbers() {
+            const num1 = document.getElementById('num1').value;
+            const num2 = document.getElementById('num2').value;
+            const resultElement = document.getElementById('result');
+            
+            try {
+                
+                const dividend = parseInt(num1);
+                const divisor = parseInt(num2);
+
+                
+                if (isNaN(dividend) || isNaN(divisor)) {
+                    throw new Error("Please enter valid integers.");
+                }
+
+                
+                if (divisor === 0) {
+                    throw new Error("Division by zero is not allowed.");
+                }
+
+                
+                const result = dividend / divisor;
+
+                
+                resultElement.textContent = "Result: " + result;
+                resultElement.style.color = "green";
+            } catch (error) {
+                
+                resultElement.textContent = "An error occurred: " + error.message;
+                resultElement.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
